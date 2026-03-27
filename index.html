@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BlissBot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <!-- Header -->
+    <div class="chat-header">
+        <h2>🌿 BlissBot</h2>
+        <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-box" id="chatBox"></div>
+
+    <!-- Quick Questions -->
+    <div class="quick-buttons">
+        <button onclick="quickMsg('I feel happy')">😊</button>
+        <button onclick="quickMsg('I feel sad')">😢</button>
+        <button onclick="quickMsg('I feel stressed')">😣</button>
+        <button onclick="quickMsg('I feel anxious')">😰</button>
+        <button onclick="quickMsg('I feel tired')">😴</button>
+        <button onclick="quickMsg('I feel lonely')">😔</button>
+        <button onclick="quickMsg('I feel angry')">😡</button>
+        <button onclick="quickMsg('I feel bored')">😶</button>
+        <button onclick="quickMsg('Give me motivation')">💡</button>
+        <button onclick="quickMsg('Give me a quote')">🌟</button>
+    </div>
+
+    <!-- Input -->
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type how you feel...">
+        <button onclick="startVoice()">🎤</button>
+        <button onclick="sendMessage()">➤</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
